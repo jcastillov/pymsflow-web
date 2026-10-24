@@ -1,0 +1,109 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "PymsFlow CRM — WhatsApp & Redes Sociales con Inteligencia Artificial",
+  description = "El primer CRM omnicanal con IA real para Latinoamérica. Transcribe notas de voz dominicanas en 2 segundos, sincroniza catálogo en vivo y atiende prospectos 24/7 sin que se enfríen las cotizaciones.",
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Básico -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://pymsflow.com/pymsflow-logo.jpg" />
+    <meta property="og:locale" content="es_DO" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="https://pymsflow.com/pymsflow-logo.jpg" />
+
+    <!-- Tipografía Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org JSON-LD para SaaS -->
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PymsFlow CRM",
+        "operatingSystem": "All modern browsers, Web Cloud",
+        "applicationCategory": "BusinessApplication",
+        "creator": {
+          "@type": "Organization",
+          "name": "Webpyms SRL",
+          "url": "https://webpyms.com"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Starter",
+            "price": "39.00",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro / Growth",
+            "price": "79.00",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Business / Scale",
+            "price": "149.00",
+            "priceCurrency": "USD"
+          }
+        ],
+        "description": "CRM omnicanal de WhatsApp y Redes Sociales con Inteligencia Artificial Gemini para negocios en Latinoamérica."
+      }
+    </script>
+  </head>
+  <body class="bg-[#07090E] text-slate-100 font-['Plus_Jakarta_Sans',sans-serif] selection:bg-emerald-500/30 selection:text-emerald-300 antialiased relative overflow-x-hidden">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  /* Scrollbar personalizado de alta gama */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #07090e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+</style>
