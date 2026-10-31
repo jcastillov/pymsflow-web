@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("¡Hola equipo PymsFlow! Quiero una demostración guiada de 10 minutos del Plan Pro para el WhatsApp de mi empresa.");
+// WhatsApp de ventas de PymsFlow (849-853-3969)
+const whatsapp = (text: string) => "https://wa.me/18498533969?text=" + encodeURIComponent(text);
+const whatsappDemoUrl = whatsapp("¡Hola equipo PymsFlow! Quiero una demostración guiada de 10 minutos del Plan Pro para el WhatsApp de mi empresa.");
 ---
 
 <Layout>
@@ -32,9 +34,9 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
       <nav class="hidden md:flex items-center gap-6 text-xs font-semibold text-slate-300">
         <a href="#funcionalidades" class="hover:text-emerald-400 transition-colors">Funcionalidades</a>
         <a href="#demostracion" class="hover:text-emerald-400 transition-colors">Demostración</a>
-        <a href="#casos-de-exito" class="hover:text-emerald-400 transition-colors">Casos de Éxito</a>
+        <a href="#casos-de-exito" class="hover:text-emerald-400 transition-colors">Casos de uso</a>
         <a href="#precios" class="hover:text-emerald-400 transition-colors">Precios</a>
-        <a href="#comparativa" class="hover:text-emerald-400 transition-colors">Comparativa</a>
+        <a href="#comparativa" class="hover:text-emerald-400 transition-colors">Por qué PymsFlow</a>
         <a href="#faq" class="hover:text-emerald-400 transition-colors">Preguntas</a>
       </nav>
 
@@ -74,7 +76,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
       </h1>
 
       <p class="mt-5 text-sm sm:text-base text-slate-400 max-w-2xl mx-auto leading-relaxed">
-        La primera solución integral para empresas que une <strong>captación web, publicidad, redes sociales y atención comercial por WhatsApp</strong>. Automatiza el trabajo repetitivo y responde a tus clientes de inmediato, manteniendo siempre a tu equipo humano con el control y la aprobación final.
+        Una solución integral para empresas que une <strong>captación web, publicidad, redes sociales y atención comercial por WhatsApp</strong>. Automatiza el trabajo repetitivo y responde a tus clientes de inmediato, manteniendo siempre a tu equipo humano con el control y la aprobación final.
       </p>
 
       <!-- CTAs -->
@@ -113,7 +115,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
         </span>
         <span class="flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-          Sin riesgo de bloqueo (Conexión Oficial)
+          Conexión oficial de WhatsApp
         </span>
       </div>
     </section>
@@ -129,7 +131,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
               <span class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></span>
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></span>
             </div>
-            <span class="text-[11px] font-mono text-slate-500 ml-2">PymsFlow Stitch · Bandeja Omnicanal</span>
+            <span class="text-[11px] font-mono text-slate-500 ml-2">PymsFlow · Bandeja de conversaciones</span>
           </div>
 
           <!-- Selector de Casos -->
@@ -225,10 +227,10 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
                   <span class="text-violet-300 font-bold flex items-center gap-1.5 text-[11px]">
                     ✨ Sugerencia de Respuesta (Copilot)
                   </span>
-                  <span class="text-[10px] text-violet-400/80 font-mono">1 clic para responder</span>
+                  <span class="text-[10px] text-violet-400/80 font-mono">tu asesor la revisa y la envía</span>
                 </div>
                 <p class="text-[11px] text-slate-200 italic">
-                  "¡Hola Carla! Sí, tenemos el Colágeno + Biotina Líquido disponible en stock por RD$ 1,450. Con entrega hoy mismo en Piantini el delivery es gratuito por compras mayores a RD$ 2,000. ¿Deseas que te lo facturemos ahora?"
+                  "¡Hola Carla! Sí, el Colágeno + Biotina líquido está disponible por RD$ 1,450. El envío a Piantini cuesta RD$ 200 y es gratis desde RD$ 2,000. Puedes pedirlo aquí 👉 tutienda.com/colageno-biotina"
                 </p>
               </div>
 
@@ -236,14 +238,14 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
               <div id="demo-content-catalog" class="hidden p-3 rounded-xl bg-cyan-950/30 border border-cyan-500/40 text-xs">
                 <div class="flex items-center justify-between mb-1.5">
                   <span class="text-cyan-300 font-bold flex items-center gap-1.5 text-[11px]">
-                    🛒 Inventario WooCommerce Sincronizado
+                    🛒 Consultado en tu tienda WooCommerce
                   </span>
                   <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded font-mono font-bold">
-                    38 frascos en almacén
+                    En existencia
                   </span>
                 </div>
                 <p class="text-[11px] text-slate-300">
-                  Producto verificado en tiempo real con SKU #BIO-COL-LIQ. Precio catálogo: RD$ 1,450. Envío express elegible.
+                  Precio, existencia y enlace salen de tu tienda en el momento de responder: RD$ 1,450. La IA nunca inventa precios ni productos.
                 </p>
               </div>
             </div>
@@ -286,7 +288,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
             </div>
             <h3 class="text-sm font-bold text-white mb-2">Coexistencia y Cero Riesgo</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
-              Tu WhatsApp sigue activo y seguro en tu celular personal. Responde desde la calle o deja que tu equipo atienda en la oficina con sincronización instantánea y sin riesgo de bloqueo.
+              Con la conexión oficial de WhatsApp sigues usando la app WhatsApp Business en tu celular. Responde desde la calle o deja que tu equipo atienda en la oficina: todo se sincroniza al instante.
             </p>
           </div>
 
@@ -297,7 +299,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
             </div>
             <h3 class="text-sm font-bold text-white mb-2">Transcripción de Notas de Voz</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
-              El 70% de tus prospectos envían audios. El sistema transcribe cualquier acento o audio ruidoso en 2 segundos para que tu asesor lea y responda al instante sin ponerse audífonos.
+              Muchos clientes prefieren enviar audios. El sistema los transcribe en segundos para que tu asesor los lea sin ponerse audífonos, y la IA los responde como cualquier otro mensaje.
             </p>
           </div>
 
@@ -319,7 +321,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
             </div>
             <h3 class="text-sm font-bold text-white mb-2">Captación Web & Meta Ads</h3>
             <p class="text-xs text-slate-400 leading-relaxed">
-              Portales web ultrarrápidos con SEO local en Cloudflare Pages y formularios instantáneos de Facebook/Instagram Ads que caen a tu WhatsApp en menos de 10 segundos.
+              Portales web ultrarrápidos con SEO local y formularios de anuncios de Facebook e Instagram que entran directo a tu embudo, con cada respuesta del cliente guardada en su ficha.
             </p>
           </div>
         </div>
@@ -333,7 +335,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
             <div>
               <h4 class="text-sm font-bold text-white">Tranquilidad Total: Tú siempre tienes la última palabra</h4>
               <p class="text-xs text-slate-300 mt-1 max-w-2xl leading-relaxed">
-                PymsFlow no reemplaza a tu equipo; lo potencia. El sistema nunca inventa precios ni promete promociones no autorizadas. En cuanto un cliente envía un comprobante de pago o hace una pregunta compleja, la conversación se transfiere de inmediato a tu asesor con un resumen de lo que necesita.
+                PymsFlow no reemplaza a tu equipo; lo potencia. La IA nunca inventa precios, no confirma pagos, entregas ni citas, y no aprende nada sin que una persona lo apruebe. Cuando un cliente envía un comprobante, hace un reclamo o pide hablar con una persona, la conversación pasa a tu asesor con un resumen de lo que necesita.
               </p>
             </div>
           </div>
@@ -347,7 +349,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
       </div>
     </section>
 
-    <!-- CASOS DE ÉXITO REALES (BIOEVA Y TOLDEC) -->
+    <!-- CASOS DE USO REALES (sin nombre de los clientes: no hay permiso para publicarlos) -->
     <section id="casos-de-exito" class="py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16">
         <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-bold mb-3">
@@ -355,81 +357,77 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
           <span>Validado en Producción Real</span>
         </div>
         <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Empresas que atienden y venden mejor con PymsFlow
+          Así lo usan empresas en República Dominicana
         </h2>
         <p class="mt-2 text-xs sm:text-sm text-slate-400">
-          Empresas líderes de e-commerce y servicios industriales escalando sus ventas y atención diariamente.
+          Una tienda en línea y una empresa de servicios, con la misma plataforma configurada para cada negocio.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Caso BioEva -->
+        <!-- Caso: tienda en línea -->
         <div class="p-6 rounded-2xl bg-[#0B0F1A] border border-white/10 flex flex-col justify-between relative overflow-hidden">
           <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
           <div>
             <div class="flex items-center justify-between mb-4">
               <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-xs">
-                  BE
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-sm">
+                  🛒
                 </div>
                 <div>
-                  <h3 class="text-sm font-bold text-white">BioEva Wellness</h3>
-                  <p class="text-[10px] text-slate-400">Retail & E-commerce de Suplementos Naturales</p>
+                  <h3 class="text-sm font-bold text-white">Fabricante de suplementos naturales</h3>
+                  <p class="text-[10px] text-slate-400">Tienda en línea y cientos de comercios aliados</p>
                 </div>
               </div>
               <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                E-Commerce WooCommerce
+                Tienda WooCommerce
               </span>
             </div>
 
-            <blockquote class="text-xs text-slate-300 leading-relaxed italic mb-4">
-              "Antes de PymsFlow, las asesoras se pasaban horas escuchando audios y no daban abasto en horas pico. Las ventas que entraban de noche se perdían. Hoy la IA transcribe las notas de voz al instante, responde consultas de productos 24/7 y todo el inventario de la tienda está sincronizado."
-            </blockquote>
+            <ul class="text-xs text-slate-300 leading-relaxed space-y-1.5 mb-4">
+              <li>• La IA responde día y noche por WhatsApp, Instagram y Facebook con el precio, la existencia y el enlace de cada producto de su tienda.</li>
+              <li>• Dice en qué farmacias y supermercados de cada ciudad suelen tener el producto.</li>
+              <li>• Los comprobantes de pago y los reclamos pasan a una asesora con un resumen.</li>
+              <li>• Cada mañana, la revisión nocturna le señala los chats que conviene revisar.</li>
+            </ul>
           </div>
 
-          <div class="pt-4 border-t border-white/[0.08] flex items-center justify-between text-[11px] text-slate-400">
-            <span class="flex items-center gap-1.5 font-semibold text-slate-200">
-              <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              100% de audios transcritos
-            </span>
-            <span class="font-semibold text-slate-200">
-              Respuesta en &lt; 2 min
-            </span>
+          <div class="pt-4 border-t border-white/[0.08] flex items-center gap-2 text-[11px] text-slate-300 font-semibold">
+            <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            WhatsApp oficial · Instagram · Facebook · Tienda
           </div>
         </div>
 
-        <!-- Caso Toldec Industrial -->
+        <!-- Caso: empresa de servicios -->
         <div class="p-6 rounded-2xl bg-[#0B0F1A] border border-white/10 flex flex-col justify-between relative overflow-hidden">
           <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
           <div>
             <div class="flex items-center justify-between mb-4">
               <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 font-bold flex items-center justify-center text-xs">
-                  TD
+                <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center text-sm">
+                  🏗️
                 </div>
                 <div>
-                  <h3 class="text-sm font-bold text-white">Toldec Industrial & Toldos.com.do</h3>
-                  <p class="text-[10px] text-slate-400">Fabricación, Toldos y Soluciones Arquitectónicas</p>
+                  <h3 class="text-sm font-bold text-white">Fábrica de toldos y estructuras</h3>
+                  <p class="text-[10px] text-slate-400">Cotizaciones a medida y visitas técnicas</p>
                 </div>
               </div>
               <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-500/15 text-blue-300 border border-blue-500/30">
-                Servicios & Portales Web
+                Servicios & Portal web
               </span>
             </div>
 
-            <blockquote class="text-xs text-slate-300 leading-relaxed italic mb-4">
-              "Los clientes que piden cotizaciones de carpas y toldos llegan desde portales web y WhatsApp. Con PymsFlow, el prospecto entra directo al embudo comercial, la nota técnica se asocia al instante y los asesores envían presupuestos sin que ninguna oportunidad se quede en el olvido."
-            </blockquote>
+            <ul class="text-xs text-slate-300 leading-relaxed space-y-1.5 mb-4">
+              <li>• Los pedidos de cotización de su portal web y de WhatsApp entran solos al embudo, con el servicio, la zona y el mensaje del cliente.</li>
+              <li>• La IA pregunta lo necesario y, cuando el prospecto está listo, se lo pasa al asesor con un resumen.</li>
+              <li>• La IA nunca confirma visitas ni fechas: eso lo acuerda una persona.</li>
+              <li>• Las reseñas de Google se responden desde el mismo lugar.</li>
+            </ul>
           </div>
 
-          <div class="pt-4 border-t border-white/[0.08] flex items-center justify-between text-[11px] text-slate-400">
-            <span class="flex items-center gap-1.5 font-semibold text-slate-200">
-              <svg class="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Cero prospectos perdidos
-            </span>
-            <span class="font-semibold text-slate-200">
-              Triage con Portales Web
-            </span>
+          <div class="pt-4 border-t border-white/[0.08] flex items-center gap-2 text-[11px] text-slate-300 font-semibold">
+            <svg class="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Portal web · WhatsApp · Google Business
           </div>
         </div>
       </div>
@@ -445,6 +443,9 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
           </p>
           <p class="mt-2 text-xs sm:text-sm text-slate-400">
             Guarda 10,000 o 100,000 contactos sin pagar penalidades sorpresa.
+          </p>
+          <p class="mt-3 text-[11px] text-slate-500">
+            Precios de referencia. En la demo ajustamos el plan a tu equipo, tus canales y tu tienda.
           </p>
         </div>
 
@@ -496,7 +497,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
             </div>
 
             <a
-              href={"https://wa.me/18095550199?text=" + encodeURIComponent("Hola, me interesa el Plan Starter de PymsFlow.")}
+              href={whatsapp("Hola, me interesa el Plan Starter de PymsFlow.")}
               target="_blank"
               rel="noreferrer"
               class="w-full py-3 rounded-xl text-xs font-extrabold bg-[#1E293B] hover:bg-[#334155] text-slate-200 border border-white/10 hover:border-white/20 transition-all text-center block cursor-pointer"
@@ -614,7 +615,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
             </div>
 
             <a
-              href={"https://wa.me/18095550199?text=" + encodeURIComponent("Hola, me interesa el Plan Business de PymsFlow.")}
+              href={whatsapp("Hola, me interesa el Plan Business de PymsFlow.")}
               target="_blank"
               rel="noreferrer"
               class="w-full py-3 rounded-xl text-xs font-extrabold bg-[#1E293B] hover:bg-[#334155] text-slate-200 border border-white/10 hover:border-white/20 transition-all text-center block cursor-pointer"
@@ -629,61 +630,42 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
     <!-- COMPARATIVA FRONTAL -->
     <section id="comparativa" class="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-xl mx-auto mb-12">
-        <h2 class="text-xs font-bold text-emerald-400 tracking-wider uppercase">Comparativa Frontal</h2>
+        <h2 class="text-xs font-bold text-emerald-400 tracking-wider uppercase">Por qué PymsFlow</h2>
         <p class="mt-2 text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-          ¿Por qué elegir PymsFlow sobre otros?
+          Una IA que vende con datos reales y sabe cuándo pasarte el chat
         </p>
       </div>
 
       <div class="rounded-2xl border border-white/10 bg-[#0B0F1A] overflow-x-auto shadow-xl">
         <table class="w-full text-left text-xs">
-          <thead>
-            <tr class="border-b border-white/10 bg-[#0F172A]">
-              <th class="p-4 text-slate-400 font-semibold">Funcionalidad Clave</th>
-              <th class="p-4 text-emerald-300 font-bold bg-emerald-500/10 border-x border-emerald-500/20">
-                PymsFlow Pro ($79)
-              </th>
-              <th class="p-4 text-slate-400 font-semibold">Leadsales ($30-$40)</th>
-              <th class="p-4 text-slate-400 font-semibold">Kommo ($150-$225/5u)</th>
-              <th class="p-4 text-slate-400 font-semibold">ManyChat ($65-$145)</th>
-            </tr>
-          </thead>
           <tbody class="divide-y divide-white/5 text-slate-300">
             <tr>
-              <td class="p-4 font-semibold text-white">Transcripción de Notas de Voz</td>
-              <td class="p-4 bg-emerald-500/5 border-x border-emerald-500/20 text-emerald-400 font-bold">
-                ✓ Instantánea (Transcripción Fonética Inteligente)
-              </td>
-              <td class="p-4 text-rose-400">✗ No tiene</td>
-              <td class="p-4 text-rose-400">✗ No tiene</td>
-              <td class="p-4 text-rose-400">✗ No tiene</td>
+              <td class="p-4 font-semibold text-white w-1/3">Datos reales de tu tienda</td>
+              <td class="p-4">Precio, existencia y enlace salen de tu tienda WooCommerce en el momento de responder. La IA nunca inventa productos ni precios.</td>
             </tr>
             <tr>
-              <td class="p-4 font-semibold text-white">Modelo de Cobro</td>
-              <td class="p-4 bg-emerald-500/5 border-x border-emerald-500/20 text-emerald-400 font-bold">
-                ✓ Precio fijo (Sin límites)
-              </td>
-              <td class="p-4 text-slate-400">Fijo</td>
-              <td class="p-4 text-rose-400">✗ Por cada usuario ($$$)</td>
-              <td class="p-4 text-rose-400">✗ Penaliza por contactos</td>
+              <td class="p-4 font-semibold text-white">Notas de voz</td>
+              <td class="p-4">Se transcriben solas y la IA las responde como cualquier mensaje.</td>
             </tr>
             <tr>
-              <td class="p-4 font-semibold text-white">Catálogo WooCommerce en Vivo</td>
-              <td class="p-4 bg-emerald-500/5 border-x border-emerald-500/20 text-emerald-400 font-bold">
-                ✓ Nativo en chat
-              </td>
-              <td class="p-4 text-rose-400">✗ No tiene</td>
-              <td class="p-4 text-slate-400">Requiere plugins caros</td>
-              <td class="p-4 text-slate-400">Básico / Limitado</td>
+              <td class="p-4 font-semibold text-white">Aprende con tu aprobación</td>
+              <td class="p-4">Lo que la IA no sabe queda como duda. Cuando tu equipo la responde, la IA propone la respuesta y solo la usa si una persona la aprueba.</td>
             </tr>
             <tr>
-              <td class="p-4 font-semibold text-white">Coexistencia con Teléfono</td>
-              <td class="p-4 bg-emerald-500/5 border-x border-emerald-500/20 text-emerald-400 font-bold">
-                ✓ QR Web + Cloud API
-              </td>
-              <td class="p-4 text-slate-400">Solo QR</td>
-              <td class="p-4 text-slate-400">Requiere BSP externo</td>
-              <td class="p-4 text-slate-400">Solo Cloud API</td>
+              <td class="p-4 font-semibold text-white">Revisión cada mañana</td>
+              <td class="p-4">El sistema revisa los chats del día anterior y te señala los que conviene mirar: sin respuesta, dato dudoso, cliente que necesitaba un asesor.</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-white">Límites claros</td>
+              <td class="p-4">No valida pagos, no confirma entregas ni citas y no promete curas. Comprobantes, reclamos y ventas al por mayor pasan a una persona.</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-white">WhatsApp oficial</td>
+              <td class="p-4">Conexión oficial en coexistencia: tu equipo sigue usando la app WhatsApp Business en el celular con el mismo número.</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-white">Precio fijo</td>
+              <td class="p-4">Sin cobro por contacto: guarda todos los clientes que quieras.</td>
             </tr>
           </tbody>
         </table>
@@ -706,7 +688,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
             <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="px-4.5 pb-4.5 pt-1 text-xs text-slate-400 leading-relaxed border-t border-white/5 bg-slate-950/40">
-            En lo absoluto. El control siempre está en tus manos. En redes sociales nada se publica sin tu aprobación previa en 1 clic. En WhatsApp, el sistema asiste en tareas mecánicas (transcribir notas de voz o responder preguntas frecuentes de stock y horarios con datos verificados de tu negocio). En cuanto el cliente envía un comprobante de pago o requiere atención personalizada, el chat se transfiere automáticamente a tu asesor humano.
+            En lo absoluto. El control siempre está en tus manos. En redes sociales nada se publica sin tu aprobación previa en 1 clic. En WhatsApp, la IA responde las preguntas frecuentes (precios y existencias de tu tienda, envíos, horarios) con datos de tu negocio. Cuando el cliente envía un comprobante de pago, hace un reclamo o pide hablar con una persona, el chat pasa a tu asesor. Y en cuanto tu asesor escribe en un chat, la IA se hace a un lado.
           </div>
         </details>
 
@@ -716,7 +698,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
             <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="px-4.5 pb-4.5 pt-1 text-xs text-slate-400 leading-relaxed border-t border-white/5 bg-slate-950/40">
-            Para nada. PymsFlow funciona con tecnología de coexistencia multi-dispositivo. Puedes conectar tu número por código QR (simulando WhatsApp Web seguro) o por Meta Cloud API oficial. Sigues usando tu celular como siempre y todo se sincroniza en tiempo real con tu equipo.
+            Para nada. Con la conexión oficial de WhatsApp en modo coexistencia sigues usando la app WhatsApp Business en tu celular con el mismo número, y todo se sincroniza en tiempo real con tu equipo. También se puede conectar por código QR, como WhatsApp Web.
           </div>
         </details>
 
@@ -726,7 +708,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
             <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="px-4.5 pb-4.5 pt-1 text-xs text-slate-400 leading-relaxed border-t border-white/5 bg-slate-950/40">
-            PymsFlow no es una herramienta para enviar spam masivo ni mensajes no solicitados. Está diseñado para atender y vender a prospectos que ya te escriben. Además, si tu empresa requiere garantía 100% institucional, soportamos la Meta Cloud API Oficial con la verificación oficial de Meta.
+            PymsFlow no es una herramienta para enviar spam masivo ni mensajes no solicitados: está diseñado para atender y vender a quien ya te escribe. Con la conexión oficial de WhatsApp tu número trabaja dentro de las reglas de Meta. La conexión por QR no es oficial y Meta puede restringir números con mucho volumen, por eso recomendamos la oficial para la línea principal de tu negocio.
           </div>
         </details>
 
@@ -736,7 +718,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
             <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="px-4.5 pb-4.5 pt-1 text-xs text-slate-400 leading-relaxed border-t border-white/5 bg-slate-950/40">
-            La IA de PymsFlow cuenta con guardrails estrictos. Si un prospecto hace preguntas que no están en la base de conocimiento, pide descuentos no autorizados o envía un comprobante de pago, la IA transfiere el chat al instante a un asesor humano marcándolo como 'Requiere Asesor'.
+            Si no sabe la respuesta, lo dice y no inventa. La duda queda registrada en "Aprendizaje IA": cuando tu equipo la responde, la IA te propone esa respuesta y solo la usa si una persona la aprueba. En salud nunca promete curar ni tratar, y remite al médico. Los comprobantes de pago, reclamos y peticiones de un asesor pasan a una persona marcados como "Requiere asesor".
           </div>
         </details>
 
@@ -746,7 +728,7 @@ const whatsappDemoUrl = "https://wa.me/18095550199?text=" + encodeURIComponent("
             <svg class="w-4 h-4 text-slate-400 transition-transform group-open:rotate-180 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="px-4.5 pb-4.5 pt-1 text-xs text-slate-400 leading-relaxed border-t border-white/5 bg-slate-950/40">
-            Tecnología de transcripción fonética de alta fidelidad optimizada para captar acentos, modismos regionales y lenguaje coloquial en español. En cuanto el cliente envía un audio, en menos de 2 segundos aparece el texto transcrito en pantalla junto con una sugerencia de respuesta lista para enviar por tu asesor.
+            Cuando el cliente envía una nota de voz por WhatsApp, Instagram o Facebook, en unos segundos aparece el texto debajo del audio. La IA lo responde como cualquier mensaje y tu asesor puede leerlo sin escucharlo, o pedirle al Copiloto una respuesta sugerida.
           </div>
         </details>
       </div>
