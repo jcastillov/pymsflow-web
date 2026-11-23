@@ -5,8 +5,8 @@ interface Props {
 }
 
 const {
-  title = "PymsFlow — La Plataforma de Crecimiento Comercial para Empresas",
-  description = "El sistema integral de captación web, publicidad, redes sociales y ventas por WhatsApp que trabaja 24/7 para tu negocio con control y supervisión humana en cada paso.",
+  title = "PymsFlow — Sistema para Captar y Dar Seguimiento a Clientes",
+  description = "Que no se te escape ningún cliente: capta leads desde tu web, Google y redes, atiéndelos en una sola bandeja (WhatsApp, SMS, Instagram, Messenger, correo, formularios) y da seguimiento a cada venta. En español, para negocios latinos en EE.UU. y Latinoamérica.",
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -31,7 +31,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content="https://pymsflow.com/pymsflow-logo.jpg" />
-    <meta property="og:locale" content="es_LA" />
+    <meta property="og:locale" content="es_US" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -81,7 +81,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
             "priceCurrency": "USD"
           }
         ],
-        "description": "Plataforma y motor comercial omnicanal de WhatsApp y Redes Sociales con atención 24/7 y supervisión humana para empresas en Latinoamérica."
+        "description": "Sistema en español de captación de clientes y CRM multicanal (web, Google, Meta Ads, WhatsApp, Instagram, Messenger) con seguimiento de ventas y asistente de IA opcional, para negocios latinos en Estados Unidos y Latinoamérica."
       }
     </script>
   </head>
